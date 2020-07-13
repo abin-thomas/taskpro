@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">TASKPRO</string>
+
+    <string name="bill_payment">Bill Reminder</string>
+    <string name="purchase_list">Purchase List</string>
+    <string name="medicine_list">Prescriptions</string>
+    <string name="todo_list">To Do List</string>
+
+    <string name="button_cancel">Cancel</string>
+    <string name="button_save">Save</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_paid">Paid</string>
+    <string name="button_edit">Edit</string>
+    <string name="button_history">Payment History</string>
+    <string name="button_addnew">Add New Bill</string>
+    <string name="button_addnewtask">Add New Task</string>
+    <string name="button_addnewpurchaselist">Add New Purchase List</string>
+    <string name="button_addnewpurchaseitem">Add New Item</string>
+    <string name="button_addnewmedicine">Add New Medicine</string>
+
+    <string name="label_lastpaiddate">Last Paid Date</string>
+    <string name="label_name">Name</string>
+    <string name="label_company">Company</string>
+    <string name="label_amount">Amount</string>
+    <string name="label_billduedate">Bill Due Date</string>
+    <string name="label_paymentfrequency">Payment Frequency</string>
+
+    <string name="label_todotitle">Title</string>
+    <string name="label_todopriority">Priority</string>
+    <string name="label_todostartdate">Start Date</string>
+    <string name="label_tododuedate">Due Date</string>
+    <string name="label_todostatus">Status</string>
+    <string name="label_todonotes">Notes</string>
+
+    <string name="label_todaysmedicine">Your Today\'s Medicines</string>
+    <string name="label_drugname">Drug Name</string>
+    <string name="label_drugamount">Drug Qty</string>
+    <string name="label_drugfrequency">Frequency</string>
+    <string name="label_drugstartdate">Start Date</string>
+    <string name="label_drugenddate">End Date</string>
+
+    <string name="hint_drugamount">Ex: 2 pills</string>
+    <string name="hint_drugfrequency">Everyday</string>
+
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/customactionbar"
+        android:id="@+id/customtoolbar"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_leftBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_leftItemBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_leftItemBorder2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_rightItemBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_rightItemBorder2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_rightBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_topBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_topItemBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottomItemBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_row2top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_row2bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottomBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <ImageView
+        android:id="@+id/bills_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/bill_payment"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_bottomItemBorder"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_leftItemBorder2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_leftItemBorder"
+        app:layout_constraintTop_toTopOf="@+id/guideline_topItemBorder"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/billpayment"
+        android:onClick="selectTask" />
+
+    <ImageView
+        android:id="@+id/todo_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/todo_list"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_bottomItemBorder"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_rightItemBorder2"
+        app:layout_constraintStart_toStartOf="@+id/guideline_rightItemBorder"
+        app:layout_constraintTop_toTopOf="@+id/guideline_topItemBorder"
+        app:srcCompat="@drawable/todolist"
+        android:onClick="selectTask" />
+
+    <ImageView
+        android:id="@+id/purchaselist_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/purchase_list"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_row2bottom"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_leftItemBorder2"
+        app:layout_constraintStart_toStartOf="@+id/guideline_leftItemBorder"
+        app:layout_constraintTop_toTopOf="@+id/guideline_row2top"
+        app:srcCompat="@drawable/purchaselist"
+        android:onClick="selectTask" />
+
+    <ImageView
+        android:id="@+id/prescription_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/medicine_list"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_row2bottom"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_rightItemBorder2"
+        app:layout_constraintStart_toStartOf="@+id/guideline_rightItemBorder"
+        app:layout_constraintTop_toTopOf="@+id/guideline_row2top"
+        app:srcCompat="@drawable/prescription"
+        android:onClick="selectTask" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

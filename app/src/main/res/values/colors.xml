@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="appBackground">#EABC71</color>
+    <color name="listViewColor">#D7EAFF</color>
+    <color name="taskbarBlack">#000000</color>
+    <color name="deleteRed">#ffcc0000</color>
+    <color name="saveGreen">#ff99cc00</color>
+    <color name="editBlueDark">#ff0099cc</color>
+    <color name="cancelBlueLight">#ff00ddff</color>
+    <color name="btnAddNewGreen">#60B62B</color>
+</resources>
